@@ -20,7 +20,7 @@ shinyServer(
                         ##Otherwise do not adjust for Community accounts (Account=2)
                         } else
                                 BaseForecast
-                        as.integer(AdjForecast)
+                        AdjForecast
                 })
                 ##Output forecast for next blood drive
                 output$forecast<-renderPrint({BDF()})
